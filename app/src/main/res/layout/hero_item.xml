@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/Hero_head_sculpture_Image"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/aatrox"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/Hero_designNation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="暗裔剑魔"
+                android:textSize="16sp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:id="@+id/Hero_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="亚托克斯"
+                android:textSize="14sp"
+                android:textColor="#aaa"/>
+
+            <TextView
+                android:id="@+id/Hero_Attribute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="战士/坦克"
+                android:textSize="12sp"
+                android:textColor="#caa10a"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
