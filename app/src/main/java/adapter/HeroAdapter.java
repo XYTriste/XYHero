@@ -71,7 +71,7 @@ public class HeroAdapter extends RecyclerView.Adapter<HeroAdapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull HeroAdapter.ViewHolder viewHolder, int i) {
         Hero hero = heroList.get(i);
-        Glide.with(context).load(hero.getHeroHeadSculptureUrl()).override(180,180).into(viewHolder.circleImageView);
+        Glide.with(context).load(hero.getHeroHeadSculptureUrl()).override(90,90).into(viewHolder.circleImageView);
         viewHolder.heroDesignNation.setText(hero.getHeroDesignNation());
         viewHolder.heroName.setText(hero.getHeroName());
         viewHolder.heroAttribute.setText(hero.getHeroAttribute());

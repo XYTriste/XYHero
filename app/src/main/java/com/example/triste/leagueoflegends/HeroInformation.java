@@ -115,7 +115,7 @@ public class HeroInformation extends AppCompatActivity implements View.OnClickLi
 
         banner.setImageLoader(new GlideImageLoader());
         banner.setImages(skinUrls);
-        banner.isAutoPlay(false);
+        //banner.isAutoPlay(false);
         banner.start();
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
