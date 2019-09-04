@@ -235,6 +235,15 @@ public class MainActivity extends AppCompatActivity {
             adapter.notifyDataSetChanged();
             return;
         }
+        for(int i = 0; i < condition.length(); i++){
+            char c = condition.charAt(i);
+            if(!Character.isAlphabetic(c)){
+                if(c < 0x0391 || c > 0xFFE5){
+                    Toast.makeText(this,"输入不合法无法查询",Toast.LENGTH_SHORT).show();
+                    return;
+                }
+            }
+        }
         String sql = "select * from hero where herodesignnation = '" + condition + "' or herodesignnation like '%" +condition+ "%'" + "or heroname = '" + condition + "' or heroname like '%"+ condition +"%'";
         Log.d("hero","SQL :"+sql);
         Cursor cursor = DataSupport.findBySQL(sql);
